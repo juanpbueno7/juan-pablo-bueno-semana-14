@@ -16,13 +16,13 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyD_dEZ4MWGg-ojnHWd9ZQqAXlegEHdzz3M",
-    authDomain: "s14-to-do-list.firebaseapp.com",
-    projectId: "s14-to-do-list",
-    storageBucket: "s14-to-do-list.appspot.com",
-    messagingSenderId: "351730414013",
-    appId: "1:351730414013:web:9f49ce1d9620f10032e2d4"
-};
+    apiKey: "AIzaSyCSm88nQdtx9BP3KmAXHE1_4UilEuBB0HA",
+    authDomain: "to-do-list-2628a.firebaseapp.com",
+    projectId: "to-do-list-2628a",
+    storageBucket: "to-do-list-2628a.appspot.com",
+    messagingSenderId: "641701647152",
+    appId: "1:641701647152:web:3d8050fce71e81ad2baef5"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
