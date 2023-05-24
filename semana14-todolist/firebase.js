@@ -27,6 +27,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const storage = getStorage(app);
 
 
 export async function getTasks() {
@@ -61,4 +62,19 @@ export async function editDocument(title, id) {
         title: title,
         completed: true,
     });
+}
+
+export async function createUser(userInfo) {
+    try {
+        const userCredential = await createUserWithEmailAndPassword(auth, userInfo.email, userInfo.password)
+
+        // Signed in
+        const user = userCredential.user;
+        console.log(user);
+        // ...
+    } catch (error) {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(error.message)
+    };
 }
